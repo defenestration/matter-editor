@@ -14,3 +14,8 @@ Designed for use with mkdocs, hugo or other html generators that work using mark
 
 Requires editfrontmatter pip package: `pip install editfrontmatter`
 
+For bulk actions, copy to your PATH and use something like:
+
+```
+for f in **/*.md; do echo $f; matter-editor.py --file "$f" mytag1 mytag2;  done
+```
