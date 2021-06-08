@@ -21,7 +21,7 @@ args = parser.parse_args()
 
 # initialize `template_str` with jinja2 template file content
 template_str = """
-title: {{ title }}
+title: "{{ title }}"
 {% if tags -%}
 tags: {{ tags|lower }}
 {% endif -%}
